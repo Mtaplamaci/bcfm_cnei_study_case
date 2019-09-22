@@ -40,7 +40,7 @@ docker rmi mtaplamaci/muhammed_taplamaci:0.1
 ```
 Ardından Docker Hub'da bulunan imajı pull etmek için aşağıdaki kod bloğunu kullandım.
 ```bash
-docker pull rtaplamaci/ramazan_taplamaci_node:0.2
+docker pull mtaplamaci/muhammed_taplamaci:0.1
 ```
 Bilgisayarıma inen imajı çalıştırmak için ise Docker CLI'de aşağıdaki komutu kullandım.
 ```bash
