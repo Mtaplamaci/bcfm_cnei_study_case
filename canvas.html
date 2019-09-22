@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+    var socket=io.connect();
+    
+    window.onload=function (){
+        var mycanvas=document.getElementById("mycanvas");
+        cizim=mycanvas.getContext("2d");
+        cizim.beginPath();
+    }
+     function eylem (a){
+         var x=a.clientX;
+         var y=a.clientY;
+         socket.emit("gonder",{"x":x,"y":y});
+     }
+   
+    socket.on("al",function (data){
+        cizim.lineTo(data.x,data.y);
+        cizim.stroke();
+    });
+    
+    </script>
+    <style>
+    canvas {
+        position: absolute;
+        left:0px;
+        top:0px;
+        height: 400px;width: 600px;border: 2px solid #ccc;
+    }
+    </style>
+    <title>muhamemd taplamacı case</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    </body>
+    <canvas onMousemove="eylem(event)" id="mycanvas"></canvas>
+
+    </html>
