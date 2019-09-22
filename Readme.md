@@ -1,5 +1,5 @@
 ## Cloud Native Engineer Intern Case Study
-projedeki web uygulaması windows işletim sistemi üzerinde yapılıp, Dockerfile kullanarak docker imajı oluşturulması ve docker hu a push edilme ilemi Ubuntu 18.04.3 LTS işletim sisteminde gerçekleştirilmiştir.
+projedeki web uygulaması windows işletim sistemi üzerinde yapılıp, Dockerfile kullanarak docker imajı oluşturulması ve docker hub a push edilme işlemi Ubuntu 18.04.3 LTS işletim sisteminde gerçekleştirilmiştir.
 
 * GÖREV 1: Herhangi bir dilde yazılmış örnek bir web uygulamasının Dockerfile kullanılarak docker imajı
 haline getirilmesi.
